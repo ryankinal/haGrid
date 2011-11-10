@@ -16,5 +16,9 @@ haGrid defines a few different ratios, and encourages combining those to form gr
 * quarters
 * "divine" ratio
 
+Designing in CSS
+----------------
+Grid-based design with haGrid requires a lot of planning. In fact, it's most likely best to design outside of CSS, and use haGrid to implement, rather than create your design.
+
 [1]: http://www.stubbornella.org			"Nicole Sullivan"
 [2]: https://github.com/stubbornella/oocss	"OOCSS"
