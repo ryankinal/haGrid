@@ -32,3 +32,13 @@
 
 .divine-small { width: 38%; }
 .divine-large { width: 62%; }
+
+/**
+	Because I wanted to use HTML5 elements, I need to
+	display them correctly. So I added the ubiquitous
+	HTML5 block defaults.
+**/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
