@@ -1,0 +1,200 @@
+/**
+    tag-specific styles
+    
+    Todo:
+        links
+**/
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, p
+{
+    margin: 0 0 5px 0;
+}
+
+div
+{
+    overflow: hidden;
+}
+
+/**
+    The outermost div, used mostly for centering
+**/
+.wrapper
+{
+    width: 90%;
+    margin: 0 5%;
+}
+
+/**
+    Header and logo styles
+**/
+.header
+{
+    background-color: #000;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: right;
+    height: 82px;
+    margin-bottom: 1em;
+}
+
+.logo h1
+{
+    margin: 0;
+}
+
+.logo img { border: solid 1px #FFF; border-width: 0 1px; }
+
+/**
+    Articles - the main building block
+**/
+.article
+{
+    margin: 1px 0;
+}
+
+.category
+{
+    text-transform: uppercase;
+    color: #007CA5;
+    font-family: "arial black", sans-serif;
+    font-weight: bold;
+    font-size: .6em;
+}
+
+.details
+{
+    font-size: .8em;
+    color: #666;
+    font-style: italic;
+}
+
+.article .image
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.article-list /** not the greatest class name ever, I know **/
+{
+    margin-bottom: .5em;
+}
+
+/**
+    that middle-of-the-page navigation
+**/
+.navigation
+{
+    background-color: #000;
+    color: #FFF;
+    margin: 1em 0 0 0;
+    font-family: "arial", sans-serif; /** Wired actually uses images for their nav items **/
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.navigation ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li
+{
+    float: left;
+}
+
+.navigation a
+{
+    display: block;
+    color: #FFF;
+    margin: .5em 1em;
+    text-decoration: none;
+}
+
+.navigation a:after
+{
+    content: " >>";
+}
+
+/**
+    the search right after the navigation
+**/
+.search
+{
+    background-color: #666;
+    color: #000;
+    padding: .5em 1em;
+    text-align: right;
+    margin: 0 0 1em 0;
+}
+
+/**
+    footer styles - hopefully generic enough to apply to the sticky footer as well
+**/
+.footer
+{
+    background-color: #000;
+    color: #FFF;
+    margin: 1em 0;
+    padding: 10px;
+}
+
+/**
+    Advertisement placeholders
+**/
+.advert
+{
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px #EEE;
+    height: 200px;
+    color: #EEE;
+}
+
+/**
+    tabbed content styles - tabs are not actually functional currently
+**/
+.tabs
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "arial black", sans-serif;
+    font-size: .8em;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.tabs li
+{
+    margin: 0 5px 0 0;
+    float: left;
+    border: solid 1px #DDD;
+    padding: .5em 1em;
+    background-color: #999;
+    color: #FFF;
+}
+
+.tabs .active
+{
+    background-color: #FFF;
+    color: #000;
+    border-bottom-color: #FFF;
+}
+
+.tab-content
+{
+    padding: 8px;
+    border: solid 1px #DDD;
+    margin-top: -1px;
+}
