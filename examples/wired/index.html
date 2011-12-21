@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wired Layout with haGrid</title>
+    <link rel="stylesheet" type="text/css" href="../../haGrid.css" />
+    <style type="text/css">
+        body { margin: 0; padding: 0; font-family: Georgia, serif; font-size: 100%; }
+        h1, h2, h3, h4, p { margin: 0 0 5px 0; }
+        div { overflow: hidden; }
+        
+        .wrapper { width: 90%; margin: 0 5%; }
+        
+        .header { background-color: #000; color: #FFF; text-transform: uppercase; text-align: right; height: 82px; margin-bottom: 1em; }
+        .logo h1 { margin: 0; }
+        .logo img { border: solid 1px #FFF; border-width: 0 1px; }
+        
+        .article { margin: 1px 0; }
+        .category { text-transform: uppercase; color: #007CA5; font-family: "arial black", sans-serif; font-weight: bold; font-size: .6em; }
+        .details { font-size: .8em; color: #666; font-style: italic; }
+        .article .image { float: left; margin-right: 10px; }
+        
+        .article-list { margin-bottom: .5em; }
+        
+        .navigation { background-color: #000; color: #FFF; margin: 1em 0 0 0; font-family: "arial", sans-serif; font-weight: bold; font-size: .8em; text-transform: uppercase; }
+        .navigation ul { margin: 0; padding: 0; list-style: none; }
+        .navigation li { float: left; }
+        .navigation a { display: block; color: #FFF; margin: .5em 1em; text-decoration: none; }
+        .navigation a:after { content: " >>"; }
+        
+        .search { background-color: #666; color: #000; padding: .5em 1em; text-align: right; margin: 0 0 1em 0; }
+        
+        .footer { background-color: #000; color: #FFF; margin: 1em 0; padding: 10px; }
+        
+        .advert { margin: 5px; padding: 5px; border: solid 1px #EEE; height: 200px; color: #EEE; }
+        
+        .tabs { margin: 0; padding: 0; list-style: none; font-family: "arial black", sans-serif; font-size: .8em; text-align: center; text-transform: uppercase; overflow: hidden; }
+        .tabs li { margin: 0 5px 0 0; float: left; border: solid 1px #DDD; padding: .5em 1em; background-color: #999; color: #FFF; }
+        .tabs .active { background-color: #FFF; color: #000; border-bottom-color: #FFF; }
+        .tab-content { padding: 8px; border: solid 1px #DDD; margin-top: -1px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <div class="header">
+                <div class="left divine-large">
+                    <div class="logo"><h1><img src="http://www.wired.com/images/home/wired_logo.gif" alt="Wired" /></h1></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="left divine-large">
+                <div class="article">
+                    <a href="#" class="image"><img src="http://www.wired.com/images_blogs/gadgetlab/2011/12/soft-ware-bg.jpg" alt="Main Headline" /></a>
+                    <p class="category">category</p>
+                    <h1>Main Headline</h1>
+                    <p class="details">time posted</p>
+                </div>
+            </div>
+            <div class="left divine-small">
+                <div class="article">
+                    <a href="#" class="image"><img src="http://www.wired.com/images_blogs/wiredscience/2011/12/diamond-weevil-bg.jpg" alt="Secondary" /></a>
+                    <p class="category">category</p>
+                    <h2>Secondary</h2>
+                    <p class="details">time posted</p>
+                </div>
+            </div>
+            <div class="left divine-large">
+                <div class="article">
+                    <a href="#" class="image"><img src="http://www.wired.com/images_blogs/dangerroom/2011/12/air-craft-w.jpg" alt="Secondary" /></a>
+                    <p class="category">category</p>
+                    <h2>Secondary</h2>
+                    <p class="details">time posted</p>
+                </div>
+            </div>
+            <div class="left divine-small">
+                <div class="left half">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left half">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">NavItem</a></li>
+                    <li><a href="#">NavItem</a></li>
+                    <li><a href="#">NavItem</a></li>
+                    <li><a href="#">NavItem</a></li>
+                    <li><a href="#">NavItem</a></li>
+                    <li><a href="#">NavItem</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" value="search" /> <input type="submit" value="Go" />
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="left two-thirds">
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/epicenter/2011/12/mozilla-firefox-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/threatlevel/2011/12/lamo-court-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/threatlevel/2011/12/bitcoins-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/wiredscience/2011/12/space-capsule-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/underwire/2011/12/brad-bird-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/gadgetlab/2011/12/up-date-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/epicenter/2011/12/anobite_apple_w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/wiredscience/2011/12/week-end-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/underwire/2011/12/tintin-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/images_blogs/wiredscience/2011/12/week-end-w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-large">
+                    <div class="article">
+                        <a href="#" class="image"><img src="http://www.wired.com/magazine/wp-content/images/19-12/pl_uncanny_places_w.jpg" alt="Tertiary" /></a>
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="left divine-small">
+                    <div class="article">
+                        <p class="category">category</p>
+                        <h3>Tertiary</h3>
+                        <p class="details">time posted</p>
+                    </div>
+                </div>
+                <div class="clear">
+                    <ul class="tabs">
+                        <li class="active">Latest Blog Posts</li>
+                        <li>Hottest Web Links</li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="article article-list">
+                            <h4>Some titley stuff</h4>
+                            <p>A description here</p>
+                            <p class="details">Time &amp; category</p>
+                        </div>
+                        <div class="article article-list">
+                            <h4>Some titley stuff</h4>
+                            <p>A description here</p>
+                            <p class="details">Time &amp; category</p>
+                        </div>
+                        <div class="article article-list">
+                            <h4>Some titley stuff</h4>
+                            <p>A description here</p>
+                            <p class="details">Time &amp; category</p>
+                        </div>
+                        <div class="article article-list">
+                            <h4>Some titley stuff</h4>
+                            <p>A description here</p>
+                            <p class="details">Time &amp; category</p>
+                        </div>
+                        <div class="article article-list">
+                            <h4>Some titley stuff</h4>
+                            <p>A description here</p>
+                            <p class="details">Time &amp; category</p>
+                        </div>
+                        <div class="article article-list">
+                            <h4>Some titley stuff</h4>
+                            <p>A description here</p>
+                            <p class="details">Time &amp; category</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left third">
+                <div class="advert">Advert</div>
+                <div class="advert">Advert</div>
+                <div class="advert">Advert</div>
+                <div class="advert">Advert</div>
+                <div class="advert">Advert</div>
+                <div class="advert">Advert</div>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>Some stuff</h4>
+            <p>Some other stuff that goes in a footer</p>
+        </div>
+    </div>
+</body>
