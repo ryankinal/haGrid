@@ -1,6 +1,8 @@
 Example: Wired.com Clone
 ========================
 
+[Here's the live demo](http://www.ryankinal.com/wired/)
+
 I was looking around the web for a good layout to recreate using haGrid, some OOCSS concepts, and separation of container and content. I didn't expect to tackle something quite as complex as [Wired.com](http://www.wired.com).
 
 Wired's code, well, it kind of sucks (sorry, Wired, I still love you). It's fixed-width, there are IDs all over the place, there are needlessly overridden styles, and it's just overly complex. 
