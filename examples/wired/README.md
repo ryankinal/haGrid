@@ -16,3 +16,9 @@ There are a few things that need added, though:
 * Right column item separators
 
 Those things should be simple enough, and actually, the sticky footer represents one of those one-off items that might have very little to do with the grid, or with OOCSS at all.
+
+Files:
+
+* layout.html - shows just the layout, without any real content
+* index.html - shows the entire page, layout and content combined
+* skin.css - the content styles (as opposed to layout styles)
