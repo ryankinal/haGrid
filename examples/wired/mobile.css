@@ -1,0 +1,19 @@
+.left, .right
+{
+    float: none;
+    width: 100%;
+}
+
+.article
+{
+    text-align: center;
+}
+
+.article .image
+{
+    float: none;
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+}
